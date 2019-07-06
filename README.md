@@ -1,6 +1,6 @@
 # go-slackbot
 
-##Basic build
+## Basic build
 `docker build -t go-slackbot .`
 
 To run locally on port 8080
@@ -9,7 +9,7 @@ To run locally on port 8080
 Then you can interact with it in your terminal using
 `curl http://localhost:8080?name=Noah`
 
-##Build with volume storage
+## Build with volume storage
 `$ docker build -t go-slackbot-volume -f Dockerfile.volume .`
 
 Create a directory in which you'd like to store logs
