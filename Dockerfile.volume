@@ -6,7 +6,7 @@ FROM golang:1.11
 # Add Maintainer Info
 LABEL maintainer="Noah Ing"
 
-# Build Args
+#Used to generate metadata
 ARG APP_NAME=go-slackbot
 ARG LOG_DIR=/${APP_NAME}/logs
 

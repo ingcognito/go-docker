@@ -6,6 +6,10 @@ FROM golang:1.11
 # Add Maintainer Info
 LABEL maintainer="Noah Ing"
 
+#Used to generate metadata
+ARG COMMIT
+ARG BRANCH
+
 # Set the Current Working Directory inside the container
 WORKDIR $GOPATH/src/github.com/noah-ing/go-slackbot
 

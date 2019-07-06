@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  go-slackbot:
+    build: .
+    volumes:
+      - .:/var/www
+    ports:
+      - "8080:80"
+    links:
+      - db
+
+  db:
+    image: postgres:9.6-alpine
+    ports:
+      - "5432:5432"
