@@ -11,7 +11,7 @@ ARG COMMIT
 ARG BRANCH
 
 # Set the Current Working Directory inside the container
-WORKDIR $GOPATH/src/github.com/noah-ing/go-slackbot
+WORKDIR $GOPATH/src/github.com/noah-ing/go-docker
 
 # Copy everything from the current directory to the PWD(Present Working Directory) inside the container
 COPY . .
@@ -27,4 +27,4 @@ RUN go install -v ./...
 EXPOSE 8080
 
 # Run the executable
-CMD ["go-slackbot"]
+CMD ["go-docker"]
